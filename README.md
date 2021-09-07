@@ -1,6 +1,6 @@
-# **Build a Text Adventure**
+# **Time Storm**
 
-The Build a Text Adventure program [ . . . ]. This training project, prepared by [Codecademy](https://www.codecademy.com/learn/learn-c-plus-plus), has been an invaluable exercise in applying the knowledge I learned in learning to declare variables using C++.
+Time Storm is an text adventure game where the user chooses an option based on a given scenario present. The user plays Agent Johnson character whose actions can influence the outcome of the team's state.
 
 ## Table of Contents
 
@@ -21,31 +21,33 @@ Your program should have a storyline with:
 
 ## Technologies
 
-- C++
+- C++11
 
 ## Setup
 
 Generally, you would want to compile and execute the program locally. To do that:
 
-1. Download `cppprogram.cpp`.
+1. Download `timestorm.cpp`, `functions.hpp`, `functions.cpp` and store them in a single directory/folder.
 2. Open the terminal or command line and navigate to the directory where the downloaded file resides.
 3. Run the following commands to compile and execute the program:
 
 ### Command Line / Bash
 
 ```git
-g++ cppprogram.cpp -o cppprogram
-./cppprogram
+g++ timestorm.cpp functions.cpp -o timestorm
+./timestorm.cpp functions
 ```
 
 ### Command Prompt
 
 ```git
-g++ cppprogram.cpp -o cppprogram
-cppprogram.exe
+g++ timestorm.cpp functions.cpp -o timestorm
+timestorm.cpp functions.exe
 ```
 
 ## Sources
 
 The techniques utilized was based on the lessons taught in [Codecademy's Learn C++ Course](https://www.codecademy.com/learn/learn-c-plus-plus
 ). The challenge is also provided by Codecademy.
+
+The plot of the game is taken from season 7, episode 9 of Agents of S.H.I.E.L.D.
