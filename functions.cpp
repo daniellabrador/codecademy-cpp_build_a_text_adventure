@@ -144,7 +144,7 @@ int nauseous_prompt(int dis, bool looped, string scenario, string a, string b, s
     if(!looped){
         while (answer!=1 && answer!=2 && answer!=3 && tries!=0) {
             cin>>answer;
-            if(answer!=1 && answer!=2 && answer!=3 && answer!=4 && tries!=0){
+            if(answer!=1 && answer!=2 && answer!=3 && tries!=0){
                 --tries;
                 if (tries!=0){
                     cout<<tries<<" attempts left: ";
@@ -202,12 +202,9 @@ int coulson_prompt(int dis, int talked_to_coulson){
         cout<<"\n"<<"You: \"No, I'm not ready yet. Th--\"";
         cout<<"\n"<<"Coulson: \"Nothing we can do. You'll get used to it.\"";
         cout<<"\n"<<"Coulson smashes his remote through a glass pane and chuckles.";
-        cout<<"\n"<<"Coulson: \"Please come wake me up this time, 'kay?\"";
+        cout<<"\n"<<"Coulson: \"Please come wake me up this time, 'kay?\"\n\n";
         return 3;
     } else if (talked_to_coulson==1){
-        cout<<"\n"<<"====================================";
-        cout<<"\n"<<"Distance from time vortex: "<<dis<<" km";
-        cout<<"\n"<<"====================================";
         cout<<"\n"<<"Coulson: \"Okay, time drive is stuck. It keeps looping back on itself over and over again.\"";
         cout<<"\n"<<"You: \"What about flying out?\"";
         cout<<"\n"<<"Coulson: \"We tried it. Technically, space is irrelevant here. So we narrow it down to fixing the drive.\"";
@@ -234,9 +231,7 @@ int coulson_prompt(int dis, int talked_to_coulson){
         cout<<"\n";
         return answer;
     } else {
-        cout<<"\n"<<"====================================";
-        cout<<"\n"<<"Distance from time vortex: "<<dis<<" km";
-        cout<<"\n"<<"====================================";
+
         cout<<"\n"<<"Coulson: \"Okay, what do we do?\"";
         cout<<"\n\n"<<"(1) Increase time between loops.";
         cout<<"\n"  <<"(2) Solve faster.";

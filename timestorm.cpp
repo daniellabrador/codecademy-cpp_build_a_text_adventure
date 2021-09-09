@@ -5,10 +5,11 @@ using namespace std;
 int main(){
     ios::sync_with_stdio(0);
 
-    int dis=94; // Distance from vortex
+    int dis=135; // Distance from vortex
     bool time_loop = true;
     bool ship = true;
     bool looped = false;
+    int talked_to_couson = 0;
 
     while(dis > 0 && time_loop==true && ship==true){
         // ----------------------------------------------
@@ -50,7 +51,7 @@ int main(){
             dis-=3;
             // Skip to next if group
         } else if (sleeping_pod==-1){
-            cout<<"\n"<<"Seems you are trying to play the game or cheat. Quitting game. Goodbye!";
+            cout<<"\n"<<"Quitting game. Goodbye!";
             return 0;
         }
     
@@ -76,14 +77,13 @@ int main(){
                 int realize_loop = question_3(dis, "Okay, now you realize you are time looping. What do you do?", "Detonate time drive (note: you need the time drive to continue your mission).", "Decide to turn on Agent Coulson (he is a robot version of the late Agent Phil Coulson)","Check out the time drive");
                 if (realize_loop==1){
                     cout<<"\n"<<"You decided to blow up the time drive. Unfortunately, the ship can't navigate anywhere, and you realized you need the time drive to break out the time anomaly.\nThe team is now awaiting for their impending doom as you guys are heading towards the time vortex.\n\n";
-                    dis = 0;
+                    ship=false;
                 } else if (realize_loop==2){
                     dis-=2;
-                    int talked_to_couson = 0;
                     int coulson = coulson_prompt(dis, talked_to_couson);
                     talked_to_couson++;
                     if (coulson==1){
-                        dis=-2;
+                        dis-=2;
                         cout<<"\n"<<"You guys decided to try to fix the time drive so it can buy you guys more time in between loops.\nHowever, in the process, the some part of the time drive blew up.";
                         lab_scene("you");
                     } else if (coulson==2){
@@ -96,17 +96,17 @@ int main(){
                             enoch_sacrifice();
                             time_loop = false;
                         } else if (solve_faster==-1){
-                            cout<<"/n"<<"Seems you are trying to play the game or cheat the game. Quitting game. Goodbye!";
+                            cout<<"/n"<<"game. Quitting game. Goodbye!";
                             return 0;
                         }
 
 
                     } else if(coulson==3){
-                        dis=-2;
+                        dis-=2;
                         // Loop again
                     }
                     else if (coulson==-1){
-                        cout<<"/n"<<"Seems you are trying to play the game or cheat the game. Quitting game. Goodbye!";
+                        cout<<"/n"<<"game. Quitting game. Goodbye!";
                         return 0;
                     }
                 } else if (realize_loop==3){
@@ -120,16 +120,16 @@ int main(){
                         dis-=2;
                         // End of major node
                     } else if (saw_deke==-1){
-                        cout<<"/n"<<"Seems you are trying to play the game or cheat the game. Quitting game. Goodbye!";
+                        cout<<"/n"<<"game. Quitting game. Goodbye!";
                         return 0;
                     }
                 } else if (realize_loop==-1){
-                    cout<<"/n"<<"Seems you are trying to play the game or cheat the game. Quitting game. Goodbye!";
+                    cout<<"/n"<<"Quitting game. Goodbye!";
                     return 0;
                 }
 
             } else if (nausea==-1){
-                cout<<"/n"<<"Seems you are trying to play the game or cheat the game. Quitting game. Goodbye!";
+                cout<<"/n"<<"game. Quitting game. Goodbye!";
                 return 0;
             }
 
