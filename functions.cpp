@@ -2,6 +2,33 @@
 #include <limits>
 using namespace std;
 
+void location(){
+    cout<<"\n"<<"                               ._";
+    cout<<"\n"<<"                              |* ;";
+    cout<<"\n"<<"            `*-.              |\"\":";
+    cout<<"\n"<<"             \\  \\             |\"\"";
+    cout<<"\n"<<"              .  \\            |   :";
+    cout<<"\n"<<"              `   \\           |";
+    cout<<"\n"<<"               \\   \\          |    ;               +.";
+    cout<<"\n"<<"                .   \\         |                   *._`-.";
+    cout<<"\n"<<"                `    \\        |     :          .-*'  `. `.";
+    cout<<"\n"<<"                _\\    \\.__..--**--...L_   _.-*'      .'`*'";
+    cout<<"\n"<<"               /  `*-._\\   -.       .-*\"*+._       .'";
+    cout<<"\n"<<"              :        ``*-._*.     \\      _J.   .'";
+    cout<<"\n"<<"          .-*'`*-.       ;     `.    \\    /   `.'";
+    cout<<"\n"<<"      .-*'  _.-*'.     .-'       `-.  `-.:   _.'`-.";
+    cout<<"\n"<<"   +*' _.-*'      `..-'             `*-. `**'      `-.";
+    cout<<"\n"<<"    `*'          .-'      ._            `*-._         `.";
+    cout<<"\n"<<"       [Zephyr-One in a time loop portal]\"\"'         .*\"`.";
+    cout<<"\n"<<"         ._.-'          _.-*'':$$$;._$              /     `.";
+    cout<<"\n"<<"      .-'  `.      _.-*' `*-.__T$P   `\"**--..__    :        `.";
+    cout<<"\n"<<".'..-'       \\_.-*'                            `\"**--..___.-*'";
+    cout<<"\n"<<"`. `.    _.-*'";
+    cout<<"\n"<<"  `. `:*'";
+    cout<<"\n"<<"    `. `.";
+    cout<<"\n"<<"      `*";
+}
+
 int question_3(int dis, string scenario, string a, string b, string c){
     int answer;
     cout<<"\n"<<"====================================";
@@ -63,17 +90,18 @@ int command_center_prompt(int dis){
     cout<<"\n"<<"====================================";
     cout<<"\n"<<"Distance from time vortex: "<<dis<<" km";
     cout<<"\n"<<"====================================";
-    cout<<"\n"<<"You arrived at the command center to reunite with the team.\nAs you arrive, everyone was frantic, trying to mitigate all damages the Zephyr ship had endured from the abnormal time jump.";
-    cout<<"\n"<<"May: \"I've got damage to nearly all systems. Trying to get a read on our locations.\"";
+    cout<<"\n"<<"You arrived at the command center to reunite with the team.\nAs you arrive, everyone was frantic, trying to mitigate all damages\nthe Zephyr ship had endured from the abnormal time jump.";
+    cout<<"\n"<<"May: \"I've got damage to nearly all systems. Trying to get a read on\nour locations.\"";
     cout<<"\n"<<"You: \"What's happening?\"";
     cout<<"\n"<<"Mack: \"Time drive overloaded.\"";
-    cout<<"\n"<<"You stepped near the window, gazed outside and wonder where you are right now.";
-    cout<<"\n"<<"Deke (ran towards command center): \"I don't wanna alarm anyone, but we are trapped in a time storm.\"";
+    cout<<"\n"<<"You stepped near the window, gazed outside and wonder where you are\nright now."<<"\n\n";
+    location();
+    cout<<"\n\n"<<"Deke (ran towards command center): \"I don't wanna alarm anyone, but\nwe are trapped in a time storm.\"";
     cout<<"\n"<<"Daniel: \"Are you just taking unrelated words and puttting them together?\"";
-    cout<<"\n"<<"Deke: \"No, Bugsy! This is real. Just like what Simmons said. We time jumped within a time jump and tore a hole in space-time. And now, we are being PULLED IN A VORTEX like we are being drained.\"";
+    cout<<"\n"<<"Deke: \"No, Bugsy! This is real. Just like what Simmons said.\nWe time jumped\nwithin a time jump and tore a hole in space-time.\nAnd now, we are being\nPULLED IN A VORTEX like we are being drained.\"";
     cout<<"\n"<<"You: \"If we are going down that drain?\"";
     cout<<"\n"<<"May: \"We would cease to exist.\"";
-    cout<<"\n"<<"Deke: \"No! We'll ceased to have ever existed, or be reduced to the size of an atom. Honestly, I have no idea how the science works here.\"";
+    cout<<"\n"<<"Deke: \"No! We'll ceased to have ever existed, or be reduced to the size of an atom.\nHonestly, I have no idea how the science works here.\"";
     cout<<"\n"<<"Mack: \"So it's pulling us in?\"";
     cout<<"\n"<<"Deke: \"Yes! We are "<<dis<<" kilometers away.\"";
     cout<<"\n\n"<<"(1) Close the cockpit door.";
