@@ -167,8 +167,9 @@ int nauseous_prompt(int dis, bool looped, string scenario, string a, string b, s
     }
 
 
-    cout<<"\n"  <<"Your response: ";
+    cout<<"\n"<<"Your response: ";
     int tries=3;
+    answer=0;
     if(!looped){
         while (answer!=1 && answer!=2 && answer!=3 && tries!=0) {
             cin>>answer;
@@ -177,7 +178,7 @@ int nauseous_prompt(int dis, bool looped, string scenario, string a, string b, s
                 if (tries!=0){
                     cout<<tries<<" attempts left: ";
                 }
-            };
+            }
         }
     } else {
         while (answer!=1 && answer!=2 && answer!=3 && answer!=4 && tries!=0) {
@@ -187,9 +188,8 @@ int nauseous_prompt(int dis, bool looped, string scenario, string a, string b, s
                 if (tries!=0){
                     cout<<tries<<" attempts left: ";
                 }
-            };
+            }
         }
-
     }
 
     if (tries<=0){
@@ -295,4 +295,5 @@ void enoch_sacrifice(){
     cout<<"\n"<<"Enoch: \"And the rest of you will live. I would like to think you guys would do the same for me.\"";
     cout<<"\n"<<"Everyone was speechless. A few moments later, Jemma and Deke brought the EDM to the time drive.";
     cout<<"\n"<<"Enoch died and you guys were able to jump out the time loop.";
+    cout<<"\n\n"<<"VICTORY";
 }

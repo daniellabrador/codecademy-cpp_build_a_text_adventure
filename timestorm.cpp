@@ -133,6 +133,10 @@ int main(){
                                 cout<<"/n"<<"game. Quitting game. Goodbye!";
                                 return 0;
                             }
+                        } else if (coulson==-1){
+                        cout<<"/n"<<"game. Quitting game. Goodbye!";
+                        return 0;
+                        }
                     } else if (saw_deke==-1){
                         cout<<"/n"<<"game. Quitting game. Goodbye!";
                         return 0;
@@ -147,6 +151,7 @@ int main(){
                 return 0;
             }
 
+            
         } else if (command_center==2){
             solar_rad_mack_scene("You decided to help May monitor the status of the ship.");
             looped = true;
@@ -162,7 +167,7 @@ int main(){
 
 
 
-    }
+    
     }
 
     if(dis<=0){
